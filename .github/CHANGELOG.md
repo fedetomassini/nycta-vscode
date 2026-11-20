@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2026-11-20)
+
+
+### Features
+
+* introduce Nycta Dark for Visual Studio Code ([c8af7e7](https://github.com/fedetomassini/nycta-vscode/commit/c8af7e75e59e576762a3419e92c75ee6dae70add))
+
 ## 1.0.0 — Unreleased
 
 ### Added
