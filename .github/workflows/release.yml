@@ -1,6 +1,7 @@
 name: Release
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
 
@@ -54,6 +55,5 @@ jobs:
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
         run: |
-          if [[ -n "$VSCE_PAT" ]]; then
-            npm run release -- --packagePath ./*.vsix
-          fi
+          : "${VSCE_PAT:?Configure the VSCE_PAT repository secret before publishing}"
+          npm run release -- --packagePath ./*.vsix
