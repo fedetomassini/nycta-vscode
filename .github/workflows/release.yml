@@ -50,10 +50,3 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ needs.prepare.outputs.tag }}
         run: gh release upload "$TAG" nycta-dark-*.vsix
-
-      - name: Publish to Visual Studio Marketplace
-        env:
-          VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: |
-          : "${VSCE_PAT:?Configure the VSCE_PAT repository secret before publishing}"
-          npm run release -- --packagePath ./*.vsix
