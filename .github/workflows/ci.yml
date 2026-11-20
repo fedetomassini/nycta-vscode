@@ -1,0 +1,27 @@
+name: Check theme package
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run package
+      - name: Check packaged themes
+        run: |
+          unzip -tq ./*.vsix
+          unzip -q ./*.vsix -d "$RUNNER_TEMP/nycta"
+          cd "$RUNNER_TEMP/nycta/extension"
+          node -e 'for (const entry of require("./package.json").contributes.themes) { const theme = require(entry.path); if (theme.name !== entry.label || !Object.keys(theme.colors).length) throw Error(entry.path); }'

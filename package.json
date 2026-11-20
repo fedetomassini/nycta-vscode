@@ -1,0 +1,59 @@
+{
+	"name": "nycta-dark",
+	"displayName": "Nycta Dark",
+	"description": "A near-black VS Code dark theme with muted text, minimal separators, subtle UI contrast, and balanced pastel syntax colors.",
+	"version": "1.0.0",
+	"publisher": "fedetomassini",
+	"author": {
+		"name": "fedetomassini",
+		"url": "https://github.com/fedetomassini"
+	},
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.85.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"nycta",
+		"dark theme",
+		"dark",
+		"minimal",
+		"near-black",
+		"low contrast"
+	],
+	"icon": "assets/icon.png",
+	"files": [
+		"assets/icon.png",
+		"themes/nycta-dark-color-theme.json",
+		".github/README.md",
+		".github/CHANGELOG.md",
+		"LICENSE"
+	],
+	"galleryBanner": {
+		"color": "#080808",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fedetomassini/nycta-vscode.git"
+	},
+	"bugs": {
+		"url": "https://github.com/fedetomassini/nycta-vscode/issues"
+	},
+	"homepage": "https://github.com/fedetomassini/nycta-vscode#readme",
+	"scripts": {
+		"package": "npx --yes @vscode/vsce@4.1.1 package --readme-path .github/README.md --changelog-path .github/CHANGELOG.md --githubBranch main",
+		"release": "npx --yes @vscode/vsce@4.1.1 publish --readme-path .github/README.md --changelog-path .github/CHANGELOG.md --githubBranch main"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Nycta Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/nycta-dark-color-theme.json"
+			}
+		]
+	}
+}

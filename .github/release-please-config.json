@@ -1,0 +1,12 @@
+{
+  "release-type": "node",
+  "packages": {
+    ".": {
+      "component": "nycta-vsc",
+      "include-v-in-release-name": true,
+      "include-component-in-tag": true,
+      "initial-version": "1.0.0",
+      "changelog-path": ".github/CHANGELOG.md"
+    }
+  }
+}

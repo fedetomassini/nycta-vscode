@@ -1,0 +1,15 @@
+name: Theme suggestion
+description: Propose a palette, highlighting, or interface improvement.
+body:
+  - type: textarea
+    id: change
+    attributes:
+      label: What would you change, and why?
+      description: Describe where the change would apply and how it would improve the theme.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Visual example
+      description: Optionally include a small snippet, screenshot, or suggested color.

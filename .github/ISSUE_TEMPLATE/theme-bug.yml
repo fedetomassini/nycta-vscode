@@ -1,0 +1,24 @@
+name: Theme bug
+description: Report unreadable text, an unexpected syntax color, or a UI contrast problem.
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Nycta and VS Code versions
+      description: Find the theme version in Extensions and the editor version in Help → About.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: Identify the UI state or provide a small code sample and its language mode. Mention any color overrides needed to reproduce it.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What did you see, and what did you expect?
+      description: A screenshot or the affected token scope is helpful if available.
+    validations:
+      required: true
