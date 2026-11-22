@@ -1,7 +1,7 @@
 {
 	"name": "nycta-dark",
 	"displayName": "Nycta Dark",
-	"description": "A near-black VS Code dark theme with muted text, minimal separators, subtle UI contrast, and balanced pastel syntax colors.",
+	"description": "A near-black theme with lavender types, rose keywords, and blue functions. Includes matching colors for the terminal, diffs, and Git decorations.",
 	"version": "1.0.0",
 	"publisher": "fedetomassini",
 	"author": {
