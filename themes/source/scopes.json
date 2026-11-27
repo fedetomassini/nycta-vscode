@@ -1,0 +1,300 @@
+[
+  {
+    "name": "Comments",
+    "scope": [
+      "comment",
+      "punctuation.definition.comment",
+      "string.comment"
+    ]
+  },
+  {
+    "name": "Documentation",
+    "scope": [
+      "comment.block.documentation",
+      "punctuation.definition.comment.documentation"
+    ]
+  },
+  {
+    "name": "Keywords",
+    "scope": [
+      "keyword",
+      "keyword.control",
+      "keyword.other",
+      "storage.modifier",
+      "storage.type",
+      "storage.type.function"
+    ]
+  },
+  {
+    "name": "Operator keywords",
+    "scope": [
+      "keyword.operator.new",
+      "keyword.operator.expression",
+      "keyword.operator.word",
+      "keyword.operator.logical",
+      "keyword.operator.expression.typeof"
+    ]
+  },
+  {
+    "name": "Operators",
+    "scope": [
+      "keyword.operator",
+      "punctuation.separator",
+      "punctuation.terminator",
+      "punctuation.accessor",
+      "punctuation.definition.generic"
+    ]
+  },
+  {
+    "name": "Strings",
+    "scope": [
+      "string",
+      "string.quoted",
+      "string.unquoted",
+      "string.template",
+      "punctuation.definition.string"
+    ]
+  },
+  {
+    "name": "String template expressions",
+    "scope": [
+      "punctuation.definition.template-expression",
+      "punctuation.section.embedded.begin",
+      "punctuation.section.embedded.end"
+    ]
+  },
+  {
+    "name": "Regex",
+    "scope": [
+      "string.regexp",
+      "constant.character.escape",
+      "constant.other.character-class.regexp",
+      "string.escape"
+    ]
+  },
+  {
+    "name": "Numbers and language constants",
+    "scope": [
+      "constant.numeric",
+      "constant.language",
+      "constant.language.boolean",
+      "constant.language.null",
+      "constant.language.undefined",
+      "support.constant"
+    ]
+  },
+  {
+    "name": "General constants",
+    "scope": [
+      "constant.other",
+      "variable.other.constant",
+      "entity.name.constant"
+    ]
+  },
+  {
+    "name": "Function calls",
+    "scope": [
+      "entity.name.function",
+      "support.function",
+      "variable.function",
+      "meta.function-call",
+      "entity.name.function.member"
+    ]
+  },
+  {
+    "name": "Function declarations",
+    "scope": [
+      "meta.function entity.name.function",
+      "meta.method.declaration entity.name.function",
+      "entity.name.method"
+    ]
+  },
+  {
+    "name": "Types and classes",
+    "scope": [
+      "entity.name.type",
+      "entity.name.class",
+      "support.class",
+      "support.type",
+      "entity.name.namespace",
+      "storage.type.class",
+      "entity.name.type.parameter"
+    ]
+  },
+  {
+    "name": "Interfaces",
+    "scope": [
+      "entity.name.type.interface",
+      "entity.name.type.alias",
+      "entity.other.inherited-class"
+    ]
+  },
+  {
+    "name": "Parameters",
+    "scope": [
+      "variable.parameter",
+      "meta.function.parameters variable",
+      "meta.function.parameter"
+    ]
+  },
+  {
+    "name": "Variables",
+    "scope": [
+      "variable",
+      "variable.other",
+      "identifier"
+    ]
+  },
+  {
+    "name": "Properties",
+    "scope": [
+      "variable.other.property",
+      "variable.other.object.property",
+      "support.variable.property",
+      "meta.object-literal.key",
+      "entity.name.tag.yaml",
+      "meta.mapping.key"
+    ]
+  },
+  {
+    "name": "Builtins",
+    "scope": [
+      "variable.language",
+      "support.variable",
+      "support.function.builtin"
+    ]
+  },
+  {
+    "name": "Decorators",
+    "scope": [
+      "meta.decorator",
+      "entity.name.function.decorator",
+      "punctuation.decorator"
+    ]
+  },
+  {
+    "name": "Tags",
+    "scope": [
+      "entity.name.tag",
+      "meta.tag",
+      "punctuation.definition.tag"
+    ]
+  },
+  {
+    "name": "Attributes",
+    "scope": [
+      "entity.other.attribute-name",
+      "meta.attribute",
+      "support.type.property-name"
+    ]
+  },
+  {
+    "name": "CSS selectors",
+    "scope": [
+      "entity.other.attribute-name.class.css",
+      "entity.other.attribute-name.id.css",
+      "entity.name.tag.css"
+    ]
+  },
+  {
+    "name": "CSS properties",
+    "scope": [
+      "support.type.property-name.css",
+      "meta.property-name.css"
+    ]
+  },
+  {
+    "name": "CSS values",
+    "scope": [
+      "support.constant.property-value.css",
+      "support.constant.color.css",
+      "constant.other.color"
+    ]
+  },
+  {
+    "name": "Markup headings",
+    "scope": [
+      "markup.heading",
+      "entity.name.section.markdown"
+    ]
+  },
+  {
+    "name": "Markup bold",
+    "scope": [
+      "markup.bold"
+    ]
+  },
+  {
+    "name": "Markup italics",
+    "scope": [
+      "markup.italic"
+    ]
+  },
+  {
+    "name": "Markup links",
+    "scope": [
+      "markup.underline.link",
+      "string.other.link",
+      "meta.link.inline"
+    ]
+  },
+  {
+    "name": "Markup code",
+    "scope": [
+      "markup.inline.raw",
+      "markup.fenced_code",
+      "markup.raw.block"
+    ]
+  },
+  {
+    "name": "Diff added",
+    "scope": [
+      "markup.inserted",
+      "meta.diff.header.to-file"
+    ]
+  },
+  {
+    "name": "Diff removed",
+    "scope": [
+      "markup.deleted",
+      "meta.diff.header.from-file"
+    ]
+  },
+  {
+    "name": "Diff changed",
+    "scope": [
+      "markup.changed"
+    ]
+  },
+  {
+    "name": "Invalid",
+    "scope": [
+      "invalid",
+      "invalid.illegal"
+    ]
+  },
+  {
+    "name": "Markup list markers",
+    "scope": [
+      "punctuation.definition.list.begin"
+    ]
+  },
+  {
+    "name": "Markup quote",
+    "scope": [
+      "markup.quote"
+    ]
+  },
+  {
+    "name": "Todo placeholders",
+    "scope": [
+      "constant.other.placeholder"
+    ]
+  },
+  {
+    "name": "Deprecated",
+    "scope": [
+      "invalid.deprecated"
+    ]
+  }
+]

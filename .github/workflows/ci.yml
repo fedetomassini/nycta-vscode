@@ -18,6 +18,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Rebuild themes from source
+        run: |
+          npm run build
+          git diff --exit-code -- themes/
       - run: npm run package
       - name: Check packaged themes
         run: |
