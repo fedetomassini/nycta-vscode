@@ -14,6 +14,7 @@ In a function signature, the name reads blue and the types lavender. Inside the 
 | Functions and methods | Blue `#9EB5EF` |
 | Types and classes | Lavender `#9B96E8` |
 | Strings | Green `#94D7A2` |
+| Numbers and constants | Cyan `#91DCE7` |
 | Properties | Peach `#EFB9A0` |
 | Comments | Gray `#7D7D7D` |
 
@@ -40,5 +41,7 @@ To select it from `settings.json` instead:
 Open the repository in VS Code and press **F5**. Select **Nycta Dark** in the new Extension Development Host window to preview local changes.
 
 To build an installable `.vsix`, run `npm run package` from the repository root with **Node.js 22 or later**. Node.js is only needed for packaging; the installed extension is a static color theme.
+
+The theme is generated from `themes/source/`, where the shared TextMate scopes live next to the values for each variant. Run `npm run build` after editing a source file; `npm run package` does this automatically.
 
 [Changelog](https://github.com/fedetomassini/nycta-vscode/blob/main/.github/CHANGELOG.md) · [Contributing](https://github.com/fedetomassini/nycta-vscode/blob/main/.github/CONTRIBUTING.md) · [MIT license](https://github.com/fedetomassini/nycta-vscode/blob/main/LICENSE)

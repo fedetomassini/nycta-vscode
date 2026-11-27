@@ -6,7 +6,11 @@ issues first so examples of the same problem stay together.
 
 ## Preview a change
 
-1. Open the repository in VS Code and edit `themes/nycta-dark-color-theme.json`.
+1. Open the repository in VS Code and edit the files in `themes/source/`.
+   `scopes.json` holds the TextMate scopes shared by every variant;
+   `nycta-dark.json` holds the color values for Nycta Dark. Run `npm run build`
+   to regenerate `themes/nycta-dark-color-theme.json` — never edit that file
+   directly, because the build overwrites it.
 2. Press **F5** and select **Nycta Dark** in the Extension Development Host.
 3. Try the affected UI state or code snippet with custom color overrides disabled.
    For syntax changes, use **Developer: Inspect Editor Tokens and Scopes** on the
