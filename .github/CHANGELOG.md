@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/fedetomassini/nycta-vscode/compare/nycta-vsc-v1.0.0...nycta-vsc-v1.0.1) (2026-11-27)
+
+
+### Bug Fixes
+
+* complete the Nycta Dark palette and correct line-number contrast ([215d31d](https://github.com/fedetomassini/nycta-vscode/commit/215d31d43d0c240398cf946599043ccb7ef05ac1))
+
 ## 1.0.0 (2026-11-20)
 
 ### Added
